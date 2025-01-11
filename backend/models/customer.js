@@ -13,7 +13,7 @@ const customerSchema = new mongoose.Schema({
   collectionPersonId: { type: String, required: true }, 
   pendingDues: { type: Number, default: 0 },
 });
-
+//sachin
 customerSchema.pre('save', function(next) {
   this.pendingDues = (this.numberOfDues * this.dueAmount) - this.dueReceivedAmount;
   next();
