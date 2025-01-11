@@ -101,7 +101,7 @@ exports.deleteCustomer = catchAsyncError(async (req, res, next) => {
 });
 
 
-// Get customers filtered by loan type
+//sachin
 exports.getCustomersByLoanType = catchAsyncError(async (req, res, next) => {
   const { loanType } = req.query;
 
@@ -139,7 +139,7 @@ exports.getCustomersByCollectionPersonId = catchAsyncError(async (req, res, next
           message: 'No customers found for the given Collection Person ID',
       });
   }
-
+//sachin
   return res.status(200).json({
       success: true,
       customers,
